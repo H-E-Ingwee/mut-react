@@ -41,10 +41,10 @@ const AboutPage = () => {
      {/* --- HERO SECTION --- */}
       <section className="about-hero d-flex align-items-center">
         <div className="container text-center hero-content">
-          <div className="badge-pill mb-3">Since Inception</div>
-          <h1 className="display-3 fw-bold mb-3 text-white">Our <span className="text-teal">Identity</span> & Faith</h1>
+          <div className="badge-pill mb-3">Rooted on Campus</div>
+          <h1 className="display-3 fw-bold mb-3 text-white">Our <span className="text-teal">Story</span> & Faith</h1>
           <p className="lead text-white opacity-90 mx-auto col-lg-7">
-            Inspiring Love, Hope, and Godliness within Murang'a University of Technology.
+            A Christ-centered family at Murang'a University of Technology, nurturing faith, purpose, and servant leadership.
           </p>
         </div>
       </section>
@@ -57,7 +57,10 @@ const AboutPage = () => {
               <h6 className="text-orange fw-bold text-uppercase mb-2">Our Foundation</h6>
               <h2 className="display-6 fw-bold text-navy mb-4">Who We Are</h2>
               <p className="text-muted mb-4">
-                The Murang'a University of Technology Christian Union (MUTCU) is a vibrant, student-led community dedicated to spiritual excellence and holistic growth.
+                The Murang'a University of Technology Christian Union (MUTCU) is a vibrant, student-led community dedicated to spiritual formation, academic integrity, and whole-life discipleship.
+              </p>
+              <p className="text-muted mb-4">
+                We gather weekly for worship, teaching, and fellowship while walking together in small discipleship groups, prayer circles, and outreach initiatives.
               </p>
               <div className="p-3 border-start border-4 border-teal bg-light rounded-end">
                 <p className="mb-0 small fw-medium text-navy">
@@ -77,9 +80,9 @@ const AboutPage = () => {
         <div className="container">
           <div className="row g-4 text-center">
             {[
-              { title: 'Our Motto', text: 'To Inspire Love, Hope, and Godliness.', icon: 'fa-quote-left', bg: 'var(--brand-orange)' },
-              { title: 'Our Vision', text: 'To be a model Christian Union cultivating Christ-centeredness.', icon: 'fa-eye', bg: 'var(--brand-teal)' },
-              { title: 'Our Mission', text: 'To raise a family well-equipped in all aspects of life.', icon: 'fa-chess-king', bg: 'var(--brand-navy)' }
+              { title: 'Our Motto', text: 'Inspiring love, hope, and godliness in all we do.', icon: 'fa-quote-left', bg: 'var(--brand-orange)' },
+              { title: 'Our Vision', text: 'To be a model Christian Union cultivating Christ-centered leaders.', icon: 'fa-eye', bg: 'var(--brand-teal)' },
+              { title: 'Our Mission', text: 'To raise a family equipped spiritually, academically, and socially.', icon: 'fa-chess-king', bg: 'var(--brand-navy)' }
             ].map((item, i) => (
               <div className="col-md-4" key={i}>
                 <div className="principle-card p-5 h-100 rounded-4 shadow-sm">
@@ -87,6 +90,47 @@ const AboutPage = () => {
                     <i className={`fas ${item.icon} text-white fs-4`}></i>
                   </div>
                   <h4 className="fw-bold text-navy">{item.title}</h4>
+                  <p className="text-muted mb-0">{item.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* --- WHAT TO EXPECT --- */}
+      <section className="py-5 bg-light">
+        <div className="container">
+          <div className="text-center mb-5">
+            <h2 className="fw-bold text-navy h1">What to Expect at MUTCU</h2>
+            <p className="text-muted mx-auto col-lg-8">
+              Whether you are new to faith or growing deeper in Christ, you will find a welcoming community and clear pathways to belong, grow, and serve.
+            </p>
+          </div>
+          <div className="row g-4">
+            {[
+              {
+                title: 'Vibrant Weekly Fellowship',
+                text: 'Join our main service for worship, preaching, and prayer alongside students from every school.',
+                icon: 'fa-church'
+              },
+              {
+                title: 'Discipleship & Mentorship',
+                text: 'Grow in small groups and mentoring relationships that build spiritual maturity and accountability.',
+                icon: 'fa-people-group'
+              },
+              {
+                title: 'Service & Outreach',
+                text: 'Serve the campus and the community through missions, compassion projects, and evangelism.',
+                icon: 'fa-handshake-angle'
+              }
+            ].map((item, i) => (
+              <div className="col-md-4" key={i}>
+                <div className="principle-card p-4 h-100 rounded-4 shadow-sm text-center">
+                  <div className="icon-circle mb-3 mx-auto" style={{ backgroundColor: 'var(--brand-teal)' }}>
+                    <i className={`fas ${item.icon} text-white fs-4`}></i>
+                  </div>
+                  <h5 className="fw-bold text-navy">{item.title}</h5>
                   <p className="text-muted mb-0">{item.text}</p>
                 </div>
               </div>
